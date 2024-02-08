@@ -22,11 +22,11 @@
         }
     ?>
     <form id="content" method="post" action="#" enctype="multipart/form-data"><br>
-        <label for="img_file">Enter header image: </label>
-        <input type="file" id="img_file" name="img_file" ><br><br>
+        <label for="img_file">Enter header image: </label><br><br>
+        <input type="file" id="img_file" name="img_file"  value="<?php echo $row['h_image'];?>" required><br><br>
 
         <label for="heading">Enter heading: </label>
-        <input type="text" id="heading" name="heading" value="<?php echo $row['heading']; ?>"><br><br>
+        <input type="text" id="heading" name="heading" value="<?php echo $row['heading']; ?>" ><br><br>
         
         <label for="paragraph">Enter paragraph: </label>
         <input type="text" id="paragraph" name="paragraph" value= "<?php echo $row['paragraph']; ?>" ><br><br>
