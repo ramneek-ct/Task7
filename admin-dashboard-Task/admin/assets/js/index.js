@@ -17,7 +17,6 @@ $(document).ready(function(){
             success: function(response){
             
                 if(response == 1){
-                    alert("ok");
                     window.location.href = 'content.php';
                 }
                 else {
