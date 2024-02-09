@@ -20,9 +20,7 @@
                         echo "Record exists already!";
                     }
                 }
-            } else {
-                echo "No record found!";
-            }
+            } 
 
             if ($counter == 0){
                 $insert = "INSERT INTO admin_data (first_name, middle_name, last_name, pass) VALUES ('$fname','$mname','$lname','$pass')";
