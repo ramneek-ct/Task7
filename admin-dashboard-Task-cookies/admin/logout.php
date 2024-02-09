@@ -1,6 +1,4 @@
 <?php
-    
-     echo "logout";
-   
+    echo "logout";
     setcookie("cookie", true, time()-86400, "/");
 ?>
