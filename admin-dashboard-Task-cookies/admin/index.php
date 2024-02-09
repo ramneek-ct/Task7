@@ -5,14 +5,6 @@
             exit();
         }
     }
-    // session_start();
-    // if(isset($_SESSION["counter"])){
-    //     if($_SESSION["counter"]==1)
-    //     {
-    //         header ("location: content.php");
-    //         exit();
-    //     }
-    // }   
 ?>
 
 <!DOCTYPE html>
