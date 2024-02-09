@@ -23,7 +23,8 @@
     ?>
     <form id="content" method="post" action="#" enctype="multipart/form-data"><br>
         <label for="img_file">Enter header image: </label><br><br>
-        <input type="file" id="img_file" name="img_file"  value="<?php echo $row['h_image'];?>" required><br><br>
+        <input type="file" id="img_file" name="img_file"  value="<?php echo $row['h_image'];?>" >
+        <label for="img_name"><?php echo $row['h_image']?></label><br><br>
 
         <label for="heading">Enter heading: </label>
         <input type="text" id="heading" name="heading" value="<?php echo $row['heading']; ?>" ><br><br>
@@ -32,6 +33,8 @@
         <input type="text" id="paragraph" name="paragraph" value= "<?php echo $row['paragraph']; ?>" ><br><br>
 
         <input type="submit" value="Enter" class="enter"><br><br>
+
+        <input type="submit" value="Log out" class="logout"><br><br>
 </form>
 </body>
 </hmtl>

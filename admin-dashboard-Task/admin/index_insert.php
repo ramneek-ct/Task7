@@ -1,9 +1,12 @@
 <?php
+session_start();
 include "admindash-db.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user = $_POST['userid'];
     $password = $_POST['password'];
+    
+    $_SESSION["counter"] = 0;
 
     $access = false;
 
@@ -17,15 +20,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if (($user == $userid) && ($password == $pass)) {
                 $access = true;
-                
             }
         }
 
         if ($access) {
+            $_SESSION["counter"] = 1;
             echo "1";
         } else {
             echo "Access Denied!";
         }
     }
 }
+
+
 ?>

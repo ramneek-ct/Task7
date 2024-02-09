@@ -71,5 +71,23 @@ $(document).ready(function(){
         });
     });
 
+    $(".logout").click(function(){
+        $.ajax({
+            type: "POST",
+            url: "logout.php",
+            contentType: false,
+            processData: false,
+            success: function (response){
+                if(response == "logout"){
+                    alert ("Logging out");
+                    window.location.href = 'index.php';
+                }
+                else {
+                    alert ("Try again");
+                }
+            }
+        })
+    })
+
 
 });
