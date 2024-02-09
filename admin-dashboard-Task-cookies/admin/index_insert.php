@@ -3,16 +3,12 @@ $cookie_name = "cookie";
 $cookie_value = false;
 setcookie($cookie_name,$cookie_value, time() + 86400, "/");
 
-//session_start();
+
 include "admindash-db.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user = $_POST['userid'];
     $password = $_POST['password'];
-
-    //$_SESSION["counter"] = 0;
-
-  
 
     $access = false;
 
@@ -31,7 +27,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
         if ($access) {
-            //$_SESSION["counter"] = 1;
             setcookie("cookie",true, time() + 86400, "/");
             echo "1";
         } else {
