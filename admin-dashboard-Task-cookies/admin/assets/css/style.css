@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+}
+
+form[id="logingin"]{
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    height: 250px;
+}
+
+form[id="admin"]{
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    height: 300px;
+}
+
+form[id="content"]{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 500px;
+    height: 300px;
+}
+
+input[type="submit"]{
+    width: 300px;
+    padding: 10px 20px;
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+input[class="create_admin"],
+input[class="create"],input[class="enter"]{
+    background-color: rgba(162, 162, 242, 0.864);
+}
+
+input[class="login"]{
+    background-color: rgba(201, 200, 200, 0.804);
+}
+
+input[type='file'] {
+    color: rgba(0, 0, 0, 0);
+    width: 120px;
+} 
+
